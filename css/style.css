@@ -57,7 +57,6 @@ img {
   text-transform: uppercase;
   padding: 0.4rem 0.6rem;
   border-radius: 15px;
-  margin-bottom: 0.5rem;
 }
 
 .category-sports {
@@ -291,9 +290,14 @@ img {
 }
 
 /* About */
+#about {
+  margin: 1rem;
+}
+
 #about .container {
   display: grid;
   grid-template-columns: 7fr 3fr;
+  gap: 1rem;
 }
 
 #about .container > article {
@@ -302,4 +306,49 @@ img {
 
 #about .container > aside > a {
   margin-top: 0.5rem;
+}
+
+/* Article page */
+#article {
+  margin: 1rem;
+}
+
+#categories {
+  background-color: #fff;
+}
+
+#article .container {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  gap: 1rem;
+}
+
+#article .container > article {
+  grid-row: 1 / span 3;
+}
+
+#article #categories {
+  padding: 0.4rem;
+}
+
+#article #categories li {
+  border-bottom: 1px dotted #666;
+  margin: 0.3rem;
+  width: 90%;
+}
+
+#article #categories li a:hover {
+  color: var(--primary-color);
+}
+
+#article .meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f4f4f4;
+  padding: 0.4rem;
+}
+
+#article .container > *:last-child > p {
+  margin-bottom: 0.5rem;
 }
