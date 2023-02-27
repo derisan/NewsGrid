@@ -38,6 +38,10 @@ img {
   width: 100%;
 }
 
+.f40 {
+  font-size: 40px;
+}
+
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -284,4 +288,18 @@ img {
   grid-column: 1 / span 4;
   text-align: center;
   background-color: #444;
+}
+
+/* About */
+#about .container {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+}
+
+#about .container > article {
+  grid-row: 1 / span 3;
+}
+
+#about .container > aside > a {
+  margin-top: 0.5rem;
 }
